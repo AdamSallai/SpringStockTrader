@@ -1,9 +1,6 @@
 package com.codecool.stockappspringboot.controller;
 
 import java.io.IOException;
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 import com.codecool.stockappspringboot.model.Logger;
 import com.codecool.stockappspringboot.model.RemoteURLReader;
 import com.codecool.stockappspringboot.model.StockAPIService;

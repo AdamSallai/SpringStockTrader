@@ -1,2 +1,3 @@
 2020/10/31 18:31:21 Bid for aapl was $300.0 but the stock price is $338.85, no purchase was made.
 2020/10/31 18:31:29 Purchased aapl stock at $3000.0, since its higher that the current price ($338.85)
+2020/11/04 14:55:44 Purchased aapl stock at $3000.0, since its higher that the current price ($338.85)

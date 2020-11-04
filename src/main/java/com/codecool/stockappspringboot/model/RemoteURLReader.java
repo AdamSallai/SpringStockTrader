@@ -15,13 +15,10 @@ import java.util.stream.Collectors;
 public class RemoteURLReader {
 
     public String readFromUrl(String endpoint) throws IOException {
-        URL url = new URL("https://owlbot.info/api/v4/dictionary/hornbill?format=json");
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestProperty("Authorization", "Token d9babcf6a7b2f35f7cf176123956ef6dbe4b5585");
-        conn.setRequestProperty("Content-Type", "text/x-json");
+        URL url = new URL(endpoint);
+        URLConnection conn = url.openConnection();
         BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8));
         String lines = reader.lines().collect(Collectors.joining("\n"));
-        System.out.println(lines);
         reader.close();
         return lines;
     }
